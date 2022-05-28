@@ -8,16 +8,16 @@ import lightsImg from './assets/lights.jpg'
 
 function App() {
 
-    const backgroundImageList = [
-        desertImg,
-        mountainImg,
-        rocksImg,
-        lightsImg,
-    ]
-
-    const [backgroundImage, setBackgroundImage] = useState(backgroundImageList[0])
+    const [backgroundImage, setBackgroundImage] = useState(lightsImg)
 
     useEffect(() => {
+        const backgroundImageList = [
+            desertImg,
+            mountainImg,
+            rocksImg,
+            lightsImg,
+        ]
+
         setInterval(() => setBackgroundImage(backgroundImageList[1]), 5000)
     }, [])
 
