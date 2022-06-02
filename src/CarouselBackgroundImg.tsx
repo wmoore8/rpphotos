@@ -9,6 +9,10 @@ export default function CarouselBackgroundImg () {
 
     const [backgroundImage, setBackgroundImage] = useState(wingedMan)
 
+    const getRandomInt = (max: number) => {
+        return Math.floor(Math.random() * max)
+    }
+
     useEffect(() => {
         const backgroundImageList = [
             CB1, CB2, CB4, CB5, CB6, CB7, CB8, CB9, CB10, CB11, CB12, CB13, CB14, CB15, CB16, CB17, CB18, CB19,
@@ -19,9 +23,9 @@ export default function CarouselBackgroundImg () {
         let count = 0
 
         setInterval(() => {
-            count === backgroundImageList.length - 1 ? count = 0 : count = count + 1
+            count === backgroundImageList.length - 1 ? count = 0 : count = getRandomInt(backgroundImageList.length)
             setBackgroundImage(backgroundImageList[count])
-        }, 2000)
+        }, 10000)
     }, [])
 
     return (
