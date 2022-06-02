@@ -1,6 +1,5 @@
 import CB1 from './3-10-19_RSH_BJ_1C.jpg'
 import CB2 from './3-10-19_RSH_BJ_1D.jpg'
-import CB3 from './flowerScene.JPG'
 import CB4 from './RSH_Brandon_1C.jpg'
 import CB5 from './RSH_Brandon_2.jpg'
 import CB6 from './RSH_Brandon_3C.jpg'
@@ -53,7 +52,6 @@ import wingedMan from './wingedMan.jpg'
 export {
     CB1,
     CB2,
-    CB3,
     CB4,
     CB5,
     CB6,
