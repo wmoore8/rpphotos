@@ -7,6 +7,9 @@ function App() {
     return (
         <div className="App">
             <CarouselBackgroundImg/>
+
+            {/*<span style={{fontSize: '50px', position: 'absolute'}}>Hi!</span>*/}
+
         </div>
     );
 }

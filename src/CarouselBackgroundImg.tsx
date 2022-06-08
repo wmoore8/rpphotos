@@ -21,7 +21,7 @@ export default function CarouselBackgroundImg () {
             duration={5000}
             prevArrow={<></>}
             nextArrow={<></>}
-            cssClass=''
+            cssClass='fade-container'
             pauseOnHover={false}
         >
             {backgroundImageList.map((image, index) => (
