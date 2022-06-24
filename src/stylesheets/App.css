@@ -1,3 +1,17 @@
-.App {
+.app {
+    justify-content: center;
+    align-items: center;
+}
 
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.links {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 40px;
 }

@@ -5,10 +5,14 @@ import CarouselBackgroundImg from "./CarouselBackgroundImg";
 function App() {
 
     return (
-        <div className="App">
+        <div className='app'>
             <CarouselBackgroundImg/>
 
-            {/*<span style={{fontSize: '50px', position: 'absolute'}}>Hi!</span>*/}
+            <div className='links-container'>
+                <span className='links'>RAMSEY PRINCE</span>
+                <span className='links'>About</span>
+                <span className='links'>Over 18</span>
+            </div>
 
         </div>
     );

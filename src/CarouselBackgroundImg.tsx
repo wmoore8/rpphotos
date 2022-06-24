@@ -30,3 +30,6 @@ export default function CarouselBackgroundImg () {
         </Fade>
     )
 }
+
+//TODO: Make random photo order
+//TODO: Scale and edit photos to screen size
