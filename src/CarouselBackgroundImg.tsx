@@ -25,7 +25,6 @@ import {
     CB29,
     CB30,
     CB32,
-    CB35,
     CB40,
     CB42,
     CB43,
@@ -45,7 +44,7 @@ export default function CarouselBackgroundImg () {
 
     const backgroundImageList = [
         CB1, CB2, CB7, CB8, CB9, CB10, CB11, CB12, CB13, CB14, CB15, CB16, CB17, CB18,
-        CB22, CB23, CB24, CB25, CB26, CB27, CB29, CB30, CB32, CB35,
+        CB22, CB23, CB24, CB25, CB26, CB27, CB29, CB30, CB32,
         CB40, CB42, CB43, CB44, CB46, CB47, CB48, CB49, CB50, wingedMan
     ]
 

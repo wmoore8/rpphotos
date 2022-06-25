@@ -21,7 +21,6 @@ import CB27 from './RSH_RJP_8S.jpg'
 import CB29 from './RSH_RJP_16.jpg'
 import CB30 from './RSH_RJP_20BIG-Nude.jpg'
 import CB32 from './RSH_RJP_23C.jpg'
-import CB35 from './RSH_RJP_27C.jpg'
 import CB40 from './RSH_RJP_33D.jpg'
 import CB42 from './RSH_RJP_C_5.jpg'
 import CB43 from './RSH_RJP_C_39.jpg'
@@ -57,7 +56,6 @@ export {
     CB29,
     CB30,
     CB32,
-    CB35,
     CB40,
     CB42,
     CB43,
