@@ -24,7 +24,7 @@ export default function RPFont ({
             sx={{
                 fontFamily: 'roboto',
                 color: '#d5ba70',
-                textDecoration: 'underline',
+                textDecoration: 'underline #d5ba70',
                 '-webkit-text-stroke-width': '0.5px',
                 '-webkit-text-stroke-color': 'black',
                 margin: `${margin}`
