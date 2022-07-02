@@ -1,6 +1,9 @@
 import React from 'react'
 import {Fade} from 'react-slideshow-image';
 
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 import 'react-slideshow-image/dist/styles.css'
 import './stylesheets/CarouselBackgroundImg.css'
 
@@ -48,11 +51,34 @@ export default function CarouselBackgroundImg () {
         CB40, CB42, CB43, CB44, CB46, CB47, CB48, CB49, CB50, wingedMan
     ]
 
+    const getRandomInt = (max: number) => {
+        return Math.floor(Math.random() * max);
+    }
+
+    const arrowStyles = {
+        position: 'fixed',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        padding: '10px',
+        color: 'white',
+        cursor: 'pointer',
+    }
+
     return (
         <Fade
             duration={5000}
-            prevArrow={<></>}
-            nextArrow={<></>}
+            prevArrow={
+                <ArrowBackIosIcon
+                    fontSize='large'
+                    sx={{left: '2%', ...arrowStyles}}
+                />
+            }
+            nextArrow={
+                <ArrowForwardIosIcon
+                    fontSize='large'
+                    sx={{left: '98%', ...arrowStyles}}
+                />
+            }
             cssClass='fade-container'
             pauseOnHover={false}
         >
