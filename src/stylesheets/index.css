@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@font-face {
+    font-family: 'blackgold';
+    src: local('Blackgold-qGAl'), url('../fonts/Blackgold-qGAl.otf') format('opentype')
+}
 
 body {
     margin: 0;

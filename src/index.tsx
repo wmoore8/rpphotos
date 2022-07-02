@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import './stylesheets/index.css';
+import './fonts/Blackgold-qGAl.otf'
 import App from './App';
 
 const root = ReactDOM.createRoot(
