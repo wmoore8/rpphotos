@@ -3,14 +3,15 @@ import CarouselBackgroundImg from "../CarouselBackgroundImg";
 import RPFont from "../WrapperComponents/RPFont";
 import RPBar from "../WrapperComponents/RPBar";
 
-function About() {
+function Spring() {
     return (
         <>
             <CarouselBackgroundImg/>
             <RPBar/>
-            <RPFont>ABOUT</RPFont>
+
+            <RPFont>SPRING</RPFont>
         </>
     )
 }
 
-export default About;
+export default Spring;

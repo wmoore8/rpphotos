@@ -3,14 +3,14 @@ import CarouselBackgroundImg from "../CarouselBackgroundImg";
 import RPFont from "../WrapperComponents/RPFont";
 import RPBar from "../WrapperComponents/RPBar";
 
-function About() {
+function Summer() {
     return (
         <>
             <CarouselBackgroundImg/>
             <RPBar/>
-            <RPFont>ABOUT</RPFont>
+            <RPFont>SUMMER</RPFont>
         </>
     )
 }
 
-export default About;
+export default Summer;
