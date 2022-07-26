@@ -3,8 +3,8 @@ import './stylesheets/App.css';
 // import CarouselBackgroundImg from "./CarouselBackgroundImg";
 import ImageGrid from "./ImageGrid";
 import RPBar from "./WrapperComponents/RPBar";
-import RPFont from "./WrapperComponents/RPFont";
-import { Link } from 'react-router-dom'
+// import RPFont from "./WrapperComponents/RPFont";
+// import { Link } from 'react-router-dom'
 
 function App() {
 
