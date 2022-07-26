@@ -59,6 +59,8 @@ export default function RPBar ({
                 </Link>
             </IconButton>
 
+            { children }
+
             <IconButton
                 onClick={handleMailClick}
                 sx={{
@@ -70,8 +72,6 @@ export default function RPBar ({
                     color='secondary'
                 />
             </IconButton>
-
-            { children }
 
         </AppBar>
     )

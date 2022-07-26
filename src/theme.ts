@@ -14,6 +14,16 @@ const theme = createTheme({
         info: {
             main: '#FFEDDA'
         }
+    },
+
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 350,
+            md: 650,
+            lg: 900,
+            xl: 1200
+        }
     }
 })
 
