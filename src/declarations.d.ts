@@ -1,6 +1,10 @@
 declare module '*.jpg';
 declare module '*.png';
 declare module '*.JPG';
+declare module '*.svg';
+declare module '*.SVG';
+declare module '*.mov';
+declare module '*.MOV';
 declare module 'react-crossfade-image';
 
 //React Slideshow

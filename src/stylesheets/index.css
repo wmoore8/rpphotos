@@ -4,7 +4,12 @@
     src: local('Blackgold-qGAl'), url('../fonts/Blackgold-qGAl.otf') format('opentype')
 }
 
-body {
+html {
+    padding: 0;
     margin: 0;
-    background: black;
+}
+
+body {
+    background: black linear-gradient(#181A18, #333333);
+    overflow-x: hidden;
 }

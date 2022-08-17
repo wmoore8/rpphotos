@@ -5,7 +5,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import 'react-slideshow-image/dist/styles.css'
-import './stylesheets/CarouselBackgroundImg.css'
+import '../stylesheets/CarouselBackgroundImg.css'
 
 import {
     CB1,
@@ -41,7 +41,7 @@ import {
     CB8,
     CB9,
     wingedMan
-} from './assets/index'
+} from '../assets/coverGrid'
 
 export default function CarouselBackgroundImg () {
 
@@ -114,5 +114,3 @@ export default function CarouselBackgroundImg () {
         </Fade>
     )
 }
-
-//TODO: Scale and edit photos to screen size

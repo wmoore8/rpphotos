@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Box from '@mui/material/Box';
 import ImageListItem, { imageListItemClasses } from '@mui/material/ImageListItem';
 
@@ -37,7 +36,7 @@ import {
     CB8,
     CB9,
     wingedMan
-} from './assets/index'
+} from './assets/coverGrid'
 
 export default function ImageGrid () {
 
@@ -80,14 +79,15 @@ export default function ImageGrid () {
     return (
         <Box
             sx={{
-                height: '70%',
+                height: '100%',
                 width: '100%',
                 display: 'grid',
+                gridGap: '50px',
                 gridTemplateColumns: {
                     xs: 'repeat(1, 1fr)',
                     sm: 'repeat(1, 1fr)',
                     md: 'repeat(2, 1fr)',
-                    lg: 'repeat(3, 1fr)',
+                    lg: 'repeat(2, 1fr)',
                     xl: 'repeat(3, 1fr)'
                 },
                 [`& .${imageListItemClasses.root}`]: {
@@ -102,6 +102,13 @@ export default function ImageGrid () {
                         src={item}
                         alt='Boudoir'
                         loading='lazy'
+                        style={{
+                            boxShadow: '1px 1px 7px 6px rgba(0,0,0,0.34)',
+                            // boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
+                            // boxShadow: '1px 1px 48px -23px rgba(195,217,45,1)',
+                            // boxShadow: 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
+                            borderRadius: '5px'
+                        }}
                     />
                 </ImageListItem>
             ))}

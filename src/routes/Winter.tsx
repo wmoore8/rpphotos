@@ -1,5 +1,5 @@
 import React from 'react'
-import CarouselBackgroundImg from "../CarouselBackgroundImg";
+import CarouselBackgroundImg from "../WrapperComponents/CarouselBackgroundImg";
 import RPFont from "../WrapperComponents/RPFont";
 import RPBar from "../WrapperComponents/RPBar";
 

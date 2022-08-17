@@ -11,7 +11,7 @@ interface RPFontProps {
 
 export default function RPFont ({
     children,
-    variant = 'subtitle2',
+    variant = 'subtitle1',
     wrap = false,
     link = null,
     margin = '6px',
@@ -24,23 +24,7 @@ export default function RPFont ({
             sx={{
                 fontFamily: 'roboto',
                 color: '#d5ba70',
-                ':before': {
-                    // content: '',
-                    position: 'absolute',
-                    width: '100%',
-                    height: '2px',
-                    bottom: '0',
-                    left: '0',
-                    backgroundColor: '#FFF',
-                    visibility: 'hidden',
-                    transform: 'scaleX(0)',
-                    transition: 'all 0.3s ease-in-out'
-                },
-                ':hover:before': {
-                    visibility: 'visible',
-                    transform: 'scaleX(1)'
-                },
-                '-webkit-text-stroke-width': '0.5px',
+                '-webkit-text-stroke-width': '0.2px',
                 '-webkit-text-stroke-color': 'black',
                 margin: `${margin}`
             }}
