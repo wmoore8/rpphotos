@@ -98,6 +98,7 @@ export default function ImageGrid () {
         >
             {imageData.map((item, i) => (
                 <ImageListItem key={i}>
+                    {/*TODO: Separate Card component that has info for each photo (see below for info to include)*/}
                     <img
                         src={item}
                         alt='Boudoir'
@@ -118,7 +119,7 @@ export default function ImageGrid () {
 // Clickable, takes you to their section of the website
 
 /* Info to include per photo:
- * - Model name
- * - Link to specific section of website
- * -
+ * - Model name (first name or stage name)
+ * - Photo 'Season'
+ * - Clicking it links to specific section of website
  */

@@ -49,6 +49,6 @@ function App() {
 export default App;
 
 // Next Big To Do's:
-//  1. Fix whatever git-lfs is doing wrong
+//  1. Fix whatever git-lfs is doing wrong (maybe https://github.com/meltingice/git-lfs-s3)
 //  2. Links dynamically change photo grid, not new section of website
 //  3. Change image grid to be Cards with overlay information (clicking implemented once +18 page has been more filled out)
