@@ -104,9 +104,6 @@ export default function ImageGrid () {
                         loading='lazy'
                         style={{
                             boxShadow: '1px 1px 7px 6px rgba(0,0,0,0.34)',
-                            // boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
-                            // boxShadow: '1px 1px 48px -23px rgba(195,217,45,1)',
-                            // boxShadow: 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
                             borderRadius: '5px'
                         }}
                     />
@@ -117,5 +114,11 @@ export default function ImageGrid () {
 
 }
 
-//TODO: put more info in image list, like model's name, etc., for POSSIBLE overlay on each photo? Clickable, takes you
-// to their section of the website?
+//TODO: change to MUI Card, put more info in image list, like model's name, etc., for overlay on each photo?
+// Clickable, takes you to their section of the website
+
+/* Info to include per photo:
+ * - Model name
+ * - Link to specific section of website
+ * -
+ */

@@ -11,7 +11,7 @@ interface RPFontProps {
 
 export default function RPFont ({
     children,
-    variant = 'subtitle1',
+    variant = 'h5',
     wrap = false,
     link = null,
     margin = '6px',

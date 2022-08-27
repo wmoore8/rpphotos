@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardMedia, Box } from '@mui/material'
+import {CardMedia, Box} from '@mui/material'
 
 interface VideoCardProps {
     displayVideo: string | undefined
@@ -26,9 +26,9 @@ export default function VideoCard({
         >
             <CardMedia
                 component='video'
-                className='video-demo'
-                image={displayVideo}
+                src={displayVideo}
                 autoPlay={isAutoplay}
+                muted
                 controls
                 sx={{
                     height: height,
