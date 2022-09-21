@@ -2,11 +2,74 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import ImageListItem, { imageListItemClasses } from '@mui/material/ImageListItem';
 
+import {
+    S1,
+    S2,
+    S3,
+    S4,
+    S5,
+    S6,
+    S7,
+    S8,
+    S9
+} from './assets/photos-spring'
+
+import {
+    Su1,
+    Su2,
+    Su3,
+    Su4,
+    Su5,
+    Su6,
+    Su7,
+    Su8
+} from './assets/photos-summer'
+
+import {
+    F1,
+    F2,
+    F3,
+    F4,
+    F5,
+    F6
+} from './assets/photos-fall'
+
+import {
+    W1,
+    W2,
+    W3,
+    W4,
+    W5,
+    W6,
+    W7,
+    W8,
+    W9,
+    W10
+} from './assets/photos-winter'
+
 interface ImageGridProps {
-    imageArray: Array<string>
+    imageArray?: Array<string>
 }
 
-export default function ImageGrid ({imageArray}: ImageGridProps) {
+const gallery = [
+    S1, S2, S3, S4, S5, S6, S7, S8, S9,
+    Su1, Su2, Su3, Su4, Su5, Su6, Su7, Su8,
+    F1, F2, F3, F4, F5, F6,
+    W1, W2, W3, W4, W5, W6, W7, W8, W9, W10
+]
+
+function shuffleArray(array: any) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+export default function ImageGrid ({
+    imageArray = gallery
+}: ImageGridProps) {
+
+    shuffleArray(gallery)
 
     return (
         <Box
