@@ -3,7 +3,6 @@ import VideoCard from './WrapperComponents/VideoCard'
 import Links from './Links'
 import { Route, Routes, Link } from 'react-router-dom'
 
-import demoVid from './assets/videos/HomeStudioVideo.mov'
 import logoWhite from './assets/logos/logoWhite.svg'
 
 import './stylesheets/App.css';
@@ -26,7 +25,7 @@ function App() {
             </Link>
 
             <VideoCard
-                displayVideo={demoVid}
+                displayVideo='https://d2ycwn7fuwzhjv.cloudfront.net/HomeStudioVideo.mov'
                 height='60%'
                 width='80%'
                 isAutoplay={true}
@@ -57,5 +56,5 @@ function App() {
 export default App;
 
 // Next Big To Do's:
-//  1. Fix whatever git-lfs is doing wrong (maybe https://github.com/meltingice/git-lfs-s3)
+//  1. Fix whatever git-lfs is doing wrong
 //  3. Change image grid to be Cards with overlay information (clicking implemented once +18 page has been more filled out)
