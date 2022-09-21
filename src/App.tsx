@@ -7,12 +7,10 @@ import demoVid from './assets/videos/HomeStudioVideo.mov'
 import logoWhite from './assets/logos/logoWhite.svg'
 
 import './stylesheets/App.css';
-import About from "./routes/About";
 import Spring from "./routes/Spring";
 import Summer from "./routes/Summer";
 import Fall from "./routes/Fall";
 import Winter from "./routes/Winter";
-import Over18 from "./routes/Over18";
 
 function App() {
 
