@@ -23,15 +23,7 @@ root.render(
   <React.StrictMode>
       <ThemeProvider theme={theme}>
           <BrowserRouter>
-              <Routes>
-                  <Route path='/' element={<App/>}/>
-                  <Route path='/about' element={<About/>}/>
-                  <Route path='/spring' element={<Spring/>}/>
-                  <Route path='/summer' element={<Summer/>}/>
-                  <Route path='/fall' element={<Fall/>}/>
-                  <Route path='/winter' element={<Winter/>}/>
-                  <Route path='/adult' element={<Over18/>}/>
-              </Routes>
+              <App />
           </BrowserRouter>
       </ThemeProvider>
   </React.StrictMode>

@@ -1,14 +1,26 @@
 import React from 'react'
-import CarouselBackgroundImg from "../WrapperComponents/CarouselBackgroundImg";
-import RPFont from "../WrapperComponents/RPFont";
-import RPBar from "../WrapperComponents/RPBar";
+import ImageGrid from '../ImageGrid'
+
+import {
+    Su1,
+    Su2,
+    Su3,
+    Su4,
+    Su5,
+    Su6,
+    Su7,
+    Su8
+} from '../assets/photos-summer'
 
 function Summer() {
+
+    const imageData = [
+        Su1, Su2, Su3, Su4, Su5, Su6, Su7, Su8
+    ]
+
     return (
         <>
-            <CarouselBackgroundImg/>
-            <RPBar/>
-            <RPFont>SUMMER</RPFont>
+            <ImageGrid imageArray={imageData} />
         </>
     )
 }

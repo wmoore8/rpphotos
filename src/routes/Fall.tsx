@@ -1,14 +1,24 @@
 import React from 'react'
-import CarouselBackgroundImg from "../WrapperComponents/CarouselBackgroundImg";
-import RPFont from "../WrapperComponents/RPFont";
-import RPBar from "../WrapperComponents/RPBar";
+import ImageGrid from '../ImageGrid'
+
+import {
+    F1,
+    F2,
+    F3,
+    F4,
+    F5,
+    F6
+} from '../assets/photos-fall'
 
 function Fall() {
+
+    const imageData = [
+        F1, F2, F3, F4, F5, F6
+    ]
+
     return (
         <>
-            <CarouselBackgroundImg/>
-            <RPBar/>
-            <RPFont>FALL</RPFont>
+            <ImageGrid imageArray={imageData} />
         </>
     )
 }

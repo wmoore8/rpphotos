@@ -1,14 +1,28 @@
 import React from 'react'
-import CarouselBackgroundImg from "../WrapperComponents/CarouselBackgroundImg";
-import RPFont from "../WrapperComponents/RPFont";
-import RPBar from "../WrapperComponents/RPBar";
+import ImageGrid from '../ImageGrid'
+
+import {
+    W1,
+    W2,
+    W3,
+    W4,
+    W5,
+    W6,
+    W7,
+    W8,
+    W9,
+    W10
+} from '../assets/photos-winter'
 
 function Winter() {
+
+    const imageData = [
+        W1, W2, W3, W4, W5, W6, W7, W8, W9, W10
+    ]
+
     return (
         <>
-            <CarouselBackgroundImg/>
-            <RPBar/>
-            <RPFont>WINTER</RPFont>
+            <ImageGrid imageArray={imageData} />
         </>
     )
 }

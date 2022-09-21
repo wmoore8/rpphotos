@@ -1,15 +1,27 @@
 import React from 'react'
-import CarouselBackgroundImg from "../WrapperComponents/CarouselBackgroundImg";
-import RPFont from "../WrapperComponents/RPFont";
-import RPBar from "../WrapperComponents/RPBar";
+import ImageGrid from '../ImageGrid'
+
+import {
+    S1,
+    S2,
+    S3,
+    S4,
+    S5,
+    S6,
+    S7,
+    S8,
+    S9
+} from '../assets/photos-spring'
 
 function Spring() {
+
+    const imageData = [
+        S1, S2, S3, S4, S5, S6, S7, S8, S9
+    ]
+
     return (
         <>
-            <CarouselBackgroundImg/>
-            <RPBar/>
-
-            <RPFont>SPRING</RPFont>
+            <ImageGrid imageArray={imageData} />
         </>
     )
 }
