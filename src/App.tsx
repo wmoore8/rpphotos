@@ -43,7 +43,7 @@ function App() {
                         alignItems='center'
                         gap={2}
                     >
-                        <a href='https://www.instagram.com/rjpdesigns/' target='_blank'>
+                        <a href='https://www.instagram.com/rjpdesigns/' target='_blank' rel='noreferrer'>
                             <IconButton>
                                 <InstagramIcon
                                     sx={{color: 'white'}}
@@ -51,7 +51,7 @@ function App() {
                                 />
                             </IconButton>
                         </a>
-                        <a href='mailto:wmoore72@gmail.com'>
+                        <a href='mailto:wmoore72@gmail.com' rel='noreferrer'>
                             <IconButton>
                                 <MailOutlineIcon
                                     sx={{color: 'white'}}
