@@ -28,7 +28,7 @@ function App() {
                 displayVideo='https://d2ycwn7fuwzhjv.cloudfront.net/HomeStudioVideo.mov'
                 height='60%'
                 width='80%'
-                isAutoplay={true}
+                isAutoplay={false}
             />
 
             <div className='mid-section'>

@@ -1,22 +1,13 @@
 import React from 'react'
 import ImageGrid from '../ImageGrid'
-
-import {
-    Su1,
-    Su2,
-    Su3,
-    Su4,
-    Su5,
-    Su6,
-    Su7,
-    Su8
-} from '../assets/photos-summer'
+import ShuffleArray from '../HelperComponents/ShuffleArray'
+import {photoDataList} from '../assets/photos-all'
 
 function Summer() {
 
-    const imageData = [
-        Su1, Su2, Su3, Su4, Su5, Su6, Su7, Su8
-    ]
+    const imageData = photoDataList.filter(photoObject => photoObject.season === 'Summer')
+
+    ShuffleArray(imageData)
 
     return (
         <>
