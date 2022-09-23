@@ -21,13 +21,9 @@ export default function RPFont ({
         <Typography
             variant={variant}
             noWrap={wrap}
-            sx={{
-                fontFamily: 'roboto',
-                color: '#d5ba70',
-                '-webkit-text-stroke-width': '0.2px',
-                '-webkit-text-stroke-color': 'black',
-                margin: `${margin}`
-            }}
+            borderColor='black'
+            color='secondary'
+            fontFamily='roboto'
         >
             {children}
         </Typography>

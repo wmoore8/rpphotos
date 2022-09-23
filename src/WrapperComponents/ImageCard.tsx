@@ -21,6 +21,7 @@ export default function ImageCard({
         boxShadow: '1px 1px 7px 6px rgba(0,0,0,0.34)',
         borderRadius: '5px',
         cursor: 'pointer',
+        background: 'black linear-gradient(#181A18, #333333)'
     },
     imgStyle = {
         height: '100%',
