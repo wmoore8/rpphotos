@@ -17,7 +17,7 @@ export default function ImageCard({
     imgModel,
     imgSeason,
     cardStyle = {
-        height: '300px',
+        height: '36vh',
         boxShadow: '1px 1px 7px 6px rgba(0,0,0,0.34)',
         borderRadius: '5px',
         cursor: 'pointer',
