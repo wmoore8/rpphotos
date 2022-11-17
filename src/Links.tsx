@@ -1,5 +1,6 @@
 import React from 'react'
 import RPFont from './WrapperComponents/RPFont'
+import IsMobile from './HelperComponents/IsMobile'
 
 import {Link} from 'react-router-dom'
 import {Box} from '@mui/material'
@@ -17,23 +18,47 @@ export default function Links() {
                 height: '120px'
             }}
         >
+            {IsMobile() &&
+                <>
+                    <div>
+                        <Link to='/spring' style={{textDecoration: 'none'}}>
+                            <RPFont>PRINTEMPS</RPFont>
+                        </Link>
 
-            <Link to='/spring' style={{textDecoration: 'none'}}>
-                <RPFont>PRINTEMPS</RPFont>
-            </Link>
+                        <Link to='/summer' style={{textDecoration: 'none'}}>
+                            <RPFont>ÉTÉ</RPFont>
+                        </Link>
+                    </div>
 
-            <Link to='/summer' style={{textDecoration: 'none'}}>
-                <RPFont>ÉTÉ</RPFont>
-            </Link>
+                    <div>
+                        <Link to='/fall' style={{textDecoration: 'none'}}>
+                            <RPFont>L'AUTOMNE</RPFont>
+                        </Link>
 
-            <Link to='/fall' style={{textDecoration: 'none'}}>
-                <RPFont>L'AUTOMNE</RPFont>
-            </Link>
+                        <Link to='/winter' style={{textDecoration: 'none'}}>
+                            <RPFont>L'HIVER</RPFont>
+                        </Link>
+                    </div>
+                </>
+            }
+            {!IsMobile() &&
+                <>
+                    <Link to='/spring' style={{textDecoration: 'none'}}>
+                        <RPFont>PRINTEMPS</RPFont>
+                    </Link>
 
-            <Link to='/winter' style={{textDecoration: 'none'}}>
-                <RPFont>L'HIVER</RPFont>
-            </Link>
+                    <Link to='/summer' style={{textDecoration: 'none'}}>
+                        <RPFont>ÉTÉ</RPFont>
+                    </Link>
+                    <Link to='/fall' style={{textDecoration: 'none'}}>
+                        <RPFont>L'AUTOMNE</RPFont>
+                    </Link>
 
+                    <Link to='/winter' style={{textDecoration: 'none'}}>
+                        <RPFont>L'HIVER</RPFont>
+                    </Link>
+                </>
+            }
         </Box>
     )
 }

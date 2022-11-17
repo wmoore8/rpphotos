@@ -49,12 +49,10 @@ export default function ImageCard({
 
     const handleOpen = () => {
         setIsImageOpen(true)
-        setIsImageHovered(false)
     }
 
     const handleClose = () => {
         setIsImageOpen(false)
-        setIsImageHovered(false)
     }
 
     const currentIndex = () => {

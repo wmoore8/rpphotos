@@ -13,6 +13,8 @@ import S12 from './RSH_RJP-Gato_3.jpg'
 import S13 from './RSH_RJP-Gato_5.jpg'
 import S14 from './RSH_RJP-Gato_6B.jpg'
 import S15 from './RSH_RJP-Gato_7.jpg'
+import S16 from './_ND40111.jpg'
+import S17 from './RSH_RJP-Gato_2.jpg'
 import F1 from './3-10-19_RSH_BJ_1C.jpg'
 import F2 from './3-10-19_RSH_BJ_1D.jpg'
 import F3 from './RSH_JF_11D.jpg'
@@ -30,6 +32,7 @@ import F14 from './RSH_Vamps_24.jpg'
 import F15 from './RSH_RJP_BH_1C.jpg'
 import F16 from './RSH_RJP_BH_6C.jpg'
 import F17 from './RSH_RJP_BH_8.jpg'
+import F18 from './RSH_Vamps_21.jpg'
 import Su1 from './RSH_RJP_2L.jpg'
 import Su2 from './RSH_RJP_4-5-22_1.jpg'
 import Su3 from './RSH_RJP_C_5.jpg'
@@ -46,6 +49,7 @@ import Su13 from './RSH_BH_12C.jpg'
 import Su14 from './RSH_BH_14.jpg'
 import Su15 from './RSH_BH_25C.jpg'
 import Su16 from './RSH_RJP_SS_2.jpg'
+import Su17 from './RSH_RJP_SS_1.jpg'
 import W1 from './RSH_JF_1.jpg'
 import W2 from './RSH_JF_2.jpg'
 import W3 from './RSH_RJP_3.jpg'
@@ -57,6 +61,10 @@ import W8 from './RSH_RJP_T_2C.jpg'
 import W9 from './RSH_RJP_T_10.jpg'
 import W10 from './RSH_RJP_T_11.jpg'
 import W11 from './RSH_RJP_SS_8.jpg'
+import W12 from './RSH_JF_1CB.jpg'
+import W13 from './RSH_RJP_SS_7.jpg'
+import W14 from './RSH_LA_1.jpg'
+import W15 from './RSH_RJP_7.jpg'
 
 export interface photoDataListProps {
     src: string,
@@ -135,6 +143,16 @@ export const photoDataList = [
     },
     {
         src: S15,
+        modelName: 'David',
+        season: 'Spring'
+    },
+    {
+        src: S16,
+        modelName: 'Jake',
+        season: 'Spring'
+    },
+    {
+        src: S17,
         modelName: 'David',
         season: 'Spring'
     },
@@ -221,6 +239,11 @@ export const photoDataList = [
         season: 'Fall'
     },
     {
+        src: F18,
+        modelName: 'Tyler, Ramsey, Jack, and Paul',
+        season: 'Fall'
+    },
+    {
         src: Su1,
         modelName: 'Dante, Chance, Ramsey, and Tyler',
         season: 'Summer'
@@ -301,6 +324,11 @@ export const photoDataList = [
         season: 'Summer'
     },
     {
+        src: Su17,
+        modelName: 'Silver Steele',
+        season: 'Summer'
+    },
+    {
         src: W1,
         modelName: 'Jack',
         season: 'Winter'
@@ -312,7 +340,7 @@ export const photoDataList = [
     },
     {
         src: W3,
-        modelName: 'Brandon',
+        modelName: 'Logan',
         season: 'Winter'
     },
     {
@@ -332,7 +360,7 @@ export const photoDataList = [
     },
     {
         src: W7,
-        modelName: 'Brandon and Tyler',
+        modelName: 'Logan and Tyler',
         season: 'Winter'
     },
     {
@@ -353,6 +381,26 @@ export const photoDataList = [
     {
         src: W11,
         modelName: 'Silver Steele',
+        season: 'Winter'
+    },
+    {
+        src: W12,
+        modelName: 'Silver Steele',
+        season: 'Winter'
+    },
+    {
+        src: W13,
+        modelName: 'Silver Steele',
+        season: 'Winter'
+    },
+    {
+        src: W14,
+        modelName: 'Logan',
+        season: 'Winter'
+    },
+    {
+        src: W15,
+        modelName: 'Jack',
         season: 'Winter'
     },
 ]
