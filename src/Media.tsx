@@ -1,7 +1,6 @@
 import React from 'react'
 import RPFont from './WrapperComponents/RPFont'
 import {Stack} from '@mui/material'
-import {Link} from 'react-router-dom'
 
 export default function Media() {
 
