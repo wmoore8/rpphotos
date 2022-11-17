@@ -22,15 +22,21 @@ export default function ImageGrid ({
                 maxHeight: '100%',
                 width: '100%',
                 display: 'grid',
-                gridGap: '50px',
+                gridGap: {
+                    xs: '5px',
+                    sm: '5px',
+                    md: '50px',
+                    lg: '50px',
+                    xl: '50px',
+                },
                 gridTemplateColumns: {
-                    xs: 'repeat(1, 1fr)',
-                    sm: 'repeat(1, 1fr)',
-                    md: 'repeat(2, 1fr)',
-                    lg: 'repeat(2, 1fr)',
+                    xs: 'repeat(2, 1fr)',
+                    sm: 'repeat(2, 1fr)',
+                    md: 'repeat(3, 1fr)',
+                    lg: 'repeat(3, 1fr)',
                     xl: 'repeat(3, 1fr)'
                 }
-        }}
+            }}
         >
             {imageArray.map((item, i) => (
                 <ImageListItem key={i}>

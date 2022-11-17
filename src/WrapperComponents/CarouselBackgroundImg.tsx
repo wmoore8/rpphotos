@@ -31,13 +31,13 @@ export default function CarouselBackgroundImg ({imageArray, index = 0}: Carousel
             prevArrow={
                 <ArrowBackIosIcon
                     fontSize='large'
-                    sx={{left: '2%', ...arrowStyles}}
+                    sx={{left: '5%', ...arrowStyles}}
                 />
             }
             nextArrow={
                 <ArrowForwardIosIcon
                     fontSize='large'
-                    sx={{left: '98%', ...arrowStyles}}
+                    sx={{left: '95%', ...arrowStyles}}
                 />
             }
         >

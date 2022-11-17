@@ -1,8 +1,19 @@
 import React, {useRef, useState} from 'react'
-import {CardMedia, Card, CardContent, Typography, Slide, Modal, Box} from '@mui/material'
+import {
+    CardMedia,
+    Card,
+    CardContent,
+    Typography,
+    Slide,
+    Dialog,
+    Box,
+    useTheme
+} from '@mui/material'
 import GridSkeleton from './GridSkeleton'
-import CarouselBackgroundImg from "./CarouselBackgroundImg";
-import {photoDataList} from "../assets/photos-all";
+import CarouselBackgroundImg from './CarouselBackgroundImg'
+import {photoDataList} from '../assets/photos-all'
+import IsMobile from "../HelperComponents/IsMobile";
+
 
 interface ImageCardProps {
     src:        string
@@ -32,6 +43,8 @@ export default function ImageCard({
     }
 }: ImageCardProps) {
 
+    const theme = useTheme()
+
     const [isImageLoading, setIsImageLoading] = useState(true)
     const [isImageHovered, setIsImageHovered] = useState(false)
     const [isImageOpen, setIsImageOpen] = useState(false)
@@ -60,51 +73,57 @@ export default function ImageCard({
 
     return (
         <>
-        <Card
-            sx={cardStyle}
-            ref={cardRef}
-            onMouseEnter={() => setIsImageHovered(true)}
-            onMouseLeave={() => setIsImageHovered(false)}
-            onClick={handleOpen}
-        >
-            <CardMedia
-                component='img'
-                src={src}
-                alt={alt}
-                style={imgStyle}
-                onLoad={() => setIsImageLoading(false)}
-            />
-            <Slide direction='up' in={isImageHovered} container={cardRef.current}>
-                <CardContent
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: 'column',
-                        position: 'relative',
-                        bottom: 100,
-                        bgcolor: 'rgba(0, 0, 0, 0.55)',
-                        height: '12%',
-                    }}
-                >
-                    <Typography gutterBottom borderColor='black' variant='h5' fontFamily='roboto' color='lightgrey'>
-                        {imgModel}
-                    </Typography>
-                    <Typography borderColor='black' variant='body1' fontFamily='roboto' color='lightslategrey'>
-                        {imgSeason}
-                    </Typography>
-                </CardContent>
-            </Slide>
-            {isImageLoading && <GridSkeleton rowHeight={300} animation='wave' verticalOffset={-300} />}
-        </Card>
-        <Modal
-            open={isImageOpen}
-            onClose={handleClose}
-        >
-            <Box sx={{outline: 0}}>
-                <CarouselBackgroundImg imageArray={photoDataList} index={currentIndex()}/>
-            </Box>
-        </Modal>
+            <Card
+                sx={cardStyle}
+                ref={cardRef}
+                onMouseEnter={() => setIsImageHovered(true)}
+                onMouseLeave={() => setIsImageHovered(false)}
+                onClick={handleOpen}
+            >
+                <CardMedia
+                    component='img'
+                    src={src}
+                    alt={alt}
+                    style={imgStyle}
+                    onLoad={() => setIsImageLoading(false)}
+                />
+                <Slide direction='up' in={isImageHovered} container={cardRef.current}>
+                    <CardContent
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'column',
+                            position: 'relative',
+                            bottom: 100,
+                            bgcolor: 'rgba(0, 0, 0, 0.55)',
+                            height: '12%',
+                        }}
+                    >
+                        <Typography gutterBottom borderColor='black' variant='h5' fontFamily='roboto' color='lightgrey'>
+                            {imgModel}
+                        </Typography>
+                        <Typography borderColor='black' variant='body1' fontFamily='roboto' color='lightslategrey'>
+                            {imgSeason}
+                        </Typography>
+                    </CardContent>
+                </Slide>
+                {isImageLoading && <GridSkeleton rowHeight={300} animation='wave' verticalOffset={-300} />}
+            </Card>
+            <Dialog
+                open={isImageOpen}
+                onClose={handleClose}
+                fullScreen={IsMobile()}
+                PaperProps={{
+                    style: {
+                        backgroundColor: 'transparent'
+                    }
+                }}
+            >
+                <Box sx={{outline: 0}}>
+                    <CarouselBackgroundImg imageArray={photoDataList} index={currentIndex()}/>
+                </Box>
+            </Dialog>
         </>
     )
 }
