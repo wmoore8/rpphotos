@@ -7,6 +7,8 @@ interface RPFontProps {
     wrap?:    boolean
     link?:    string | null
     margin?:  string
+    padding?: string
+    color?:   string
 }
 
 export default function RPFont ({
@@ -15,6 +17,8 @@ export default function RPFont ({
     wrap = false,
     link = null,
     margin = '6px',
+    padding = '0',
+    color = 'secondary'
 }: RPFontProps) {
 
     return (
@@ -22,8 +26,10 @@ export default function RPFont ({
             variant={variant}
             noWrap={wrap}
             borderColor='black'
-            color='secondary'
-            fontFamily='roboto'
+            color={color}
+            fontFamily='metropolis'
+            padding={padding}
+            textAlign='center'
         >
             {children}
         </Typography>

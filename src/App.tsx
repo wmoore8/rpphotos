@@ -1,6 +1,7 @@
 import React from 'react'
 import VideoCard from './WrapperComponents/VideoCard'
 import Links from './Links'
+import Media from './Media'
 import { Route, Routes, Link } from 'react-router-dom'
 import {Stack, Box, IconButton} from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram'
@@ -51,7 +52,7 @@ function App() {
                                 />
                             </IconButton>
                         </a>
-                        <a href='mailto:wmoore72@gmail.com' rel='noreferrer'>
+                        <a href='mailto:wmoore72@gmail.com'>
                             <IconButton>
                                 <MailOutlineIcon
                                     sx={{color: 'white'}}
@@ -60,8 +61,8 @@ function App() {
                             </IconButton>
                         </a>
                     </Stack>
-                </Stack>
 
+                </Stack>
 
                 <VideoCard
                     displayVideo='https://d2ycwn7fuwzhjv.cloudfront.net/HomeStudioVideo.mov'
@@ -70,6 +71,12 @@ function App() {
                     isAutoplay={false}
                 />
             </Box>
+
+            <div className='media-section'>
+
+                <Media />
+
+            </div>
 
             <div className='mid-section'>
 
@@ -99,6 +106,4 @@ function App() {
 
 export default App;
 
-// Next Big To Do's:
-//  1. Fix whatever git-lfs is doing wrong
-//  3. Change image grid to be Cards with overlay information (clicking implemented once +18 page has been more filled out)
+//TODO: Clicking photo brings full scale photo over-layed above, detail bar underneath with direct link to model(s) page

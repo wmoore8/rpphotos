@@ -3,6 +3,10 @@
     font-family: 'blackgold';
     src: local('Blackgold-qGAl'), url('../fonts/Blackgold-qGAl.otf') format('opentype')
 }
+@font-face {
+    font-family: 'metropolis';
+    src: local('metropolis'), url('../fonts/Metropolis-Regular.ttf') format('truetype')
+}
 
 html {
     padding: 0;

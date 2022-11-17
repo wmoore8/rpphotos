@@ -18,10 +18,6 @@ export default function Links() {
             }}
         >
 
-            {/*<Link to='/about' style={{textDecoration: 'none', whiteSpace: 'nowrap'}}>*/}
-            {/*    <RPFont>À PROPOS</RPFont>*/}
-            {/*</Link>*/}
-
             <Link to='/spring' style={{textDecoration: 'none'}}>
                 <RPFont>PRINTEMPS</RPFont>
             </Link>
@@ -38,13 +34,6 @@ export default function Links() {
                 <RPFont>L'HIVER</RPFont>
             </Link>
 
-            {/*<Link to='/adult' style={{textDecoration: 'none', whiteSpace: 'nowrap'}}>*/}
-            {/*    <RPFont>PLUS de 18</RPFont>*/}
-            {/*</Link>*/}
-
-            {/*<Link to='/press' style={{textDecoration: 'none'}}>*/}
-            {/*    <RPFont>MÉDIAS</RPFont>*/}
-            {/*</Link>*/}
         </Box>
     )
 }
@@ -52,9 +41,6 @@ export default function Links() {
 //TODO: Change links-container to dynamic grid
 // --> Conditionally show non-seasonal links on smaller screens
 // --> Design way to include 3 commented out links
-
-// ^ to answer, possibly just leave the 4 links. When clicking new link, it changes the image grid below,
-// but does not alter rest of page (like more of a 1-page design)
 
 // Getting to the other 3 pages (about me, media, and +18) will take some more thought.
 // Possible Ideas:

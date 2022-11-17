@@ -1,6 +1,8 @@
-import React, {useRef, useState} from 'react'
-import {CardMedia, Card, CardContent, Typography, Slide} from '@mui/material'
+import React, {useRef, useState, useCallback} from 'react'
+import {CardMedia, Card, CardContent, Typography, Slide, Modal, Dialog, Box} from '@mui/material'
 import GridSkeleton from './GridSkeleton'
+import CarouselBackgroundImg from "./CarouselBackgroundImg";
+import {photoDataList} from "../assets/photos-all";
 
 interface ImageCardProps {
     src:        string
@@ -32,15 +34,38 @@ export default function ImageCard({
 
     const [isImageLoading, setIsImageLoading] = useState(true)
     const [isImageHovered, setIsImageHovered] = useState(false)
+    const [isImageOpen, setIsImageOpen] = useState(false)
 
     const cardRef = useRef(null)
 
+    const handleOpen = () => {
+        setIsImageOpen(true)
+        setIsImageHovered(false)
+    }
+
+    const handleClose = () => {
+        setIsImageOpen(false)
+        setIsImageHovered(false)
+    }
+
+    const currentIndex = () => {
+        const element = photoDataList.find(img => {
+            return img.src === src
+        })
+        if (element !== undefined) return photoDataList.indexOf(element)
+        else return 0
+    }
+
+    console.log(isImageOpen)
+
     return (
+        <>
         <Card
             sx={cardStyle}
             ref={cardRef}
             onMouseEnter={() => setIsImageHovered(true)}
             onMouseLeave={() => setIsImageHovered(false)}
+            onClick={handleOpen}
         >
             <CardMedia
                 component='img'
@@ -72,5 +97,14 @@ export default function ImageCard({
             </Slide>
             {isImageLoading && <GridSkeleton rowHeight={300} animation='wave' verticalOffset={-300} />}
         </Card>
+        <Modal
+            open={isImageOpen}
+            onClose={handleClose}
+        >
+            <Box sx={{outline: 0}}>
+                <CarouselBackgroundImg imageArray={photoDataList} index={currentIndex()}/>
+            </Box>
+        </Modal>
+        </>
     )
 }

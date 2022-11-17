@@ -8,23 +8,26 @@ import 'react-slideshow-image/dist/styles.css'
 import '../stylesheets/CarouselBackgroundImg.css'
 
 interface CarouselBackgroundImgProps {
-    imageArray: Array<string>
+    imageArray: Array<any>
+    index?:     number
 }
 
-export default function CarouselBackgroundImg ({imageArray}: CarouselBackgroundImgProps) {
+export default function CarouselBackgroundImg ({imageArray, index = 0}: CarouselBackgroundImgProps) {
 
     const arrowStyles = {
         position: 'fixed',
         top: '50%',
         transform: 'translate(-50%, -50%)',
         padding: '10px',
-        color: '#d5ba70',
+        color: 'whitesmoke',
         cursor: 'pointer',
     }
 
     return (
         <Fade
-            duration={5000}
+            autoplay={false}
+            defaultIndex={index}
+            transitionDuration={400}
             prevArrow={
                 <ArrowBackIosIcon
                     fontSize='large'
@@ -37,11 +40,14 @@ export default function CarouselBackgroundImg ({imageArray}: CarouselBackgroundI
                     sx={{left: '98%', ...arrowStyles}}
                 />
             }
-            cssClass='fade-container'
-            pauseOnHover={false}
         >
             {imageArray.map((image, index) => (
-                <img className='image-container' alt='male model carousel' key={index} src={image}/>
+                <img
+                    className='image-container'
+                    alt='male model'
+                    key={index}
+                    src={image.src}
+                />
             ))}
         </Fade>
     )
