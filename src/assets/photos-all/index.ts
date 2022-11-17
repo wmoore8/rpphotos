@@ -385,7 +385,7 @@ export const photoDataList = [
     },
     {
         src: W12,
-        modelName: 'Silver Steele',
+        modelName: 'Jack',
         season: 'Winter'
     },
     {
