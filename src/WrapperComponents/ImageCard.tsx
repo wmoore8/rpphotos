@@ -13,7 +13,6 @@ import CarouselBackgroundImg from './CarouselBackgroundImg'
 import {photoDataList} from '../assets/photos-all'
 import IsMobile from "../HelperComponents/IsMobile";
 
-
 interface ImageCardProps {
     src:        string
     alt:        string
@@ -29,7 +28,7 @@ export default function ImageCard({
     imgModel,
     imgSeason,
     cardStyle = {
-        height: '36vh',
+        height: `${IsMobile() ? '100%' : '36vh'}`,
         boxShadow: '1px 1px 7px 6px rgba(0,0,0,0.34)',
         borderRadius: '5px',
         cursor: 'pointer',
@@ -65,8 +64,6 @@ export default function ImageCard({
         if (element !== undefined) return photoDataList.indexOf(element)
         else return 0
     }
-
-    console.log(isImageOpen)
 
     return (
         <>
@@ -108,9 +105,8 @@ export default function ImageCard({
                 {isImageLoading && <GridSkeleton rowHeight={300} animation='wave' verticalOffset={-300} />}
             </Card>
             <Dialog
-                open={isImageOpen}
+                open={!IsMobile() && isImageOpen}
                 onClose={handleClose}
-                fullScreen={IsMobile()}
                 PaperProps={{
                     style: {
                         backgroundColor: 'transparent'

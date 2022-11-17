@@ -25,14 +25,14 @@ export default function ImageGrid ({
                 gridGap: {
                     xs: '5px',
                     sm: '5px',
-                    md: '50px',
+                    md: '5px',
                     lg: '50px',
                     xl: '50px',
                 },
                 gridTemplateColumns: {
-                    xs: 'repeat(2, 1fr)',
-                    sm: 'repeat(2, 1fr)',
-                    md: 'repeat(3, 1fr)',
+                    xs: 'repeat(1, 1fr)',
+                    sm: 'repeat(1, 1fr)',
+                    md: 'repeat(1, 1fr)',
                     lg: 'repeat(3, 1fr)',
                     xl: 'repeat(3, 1fr)'
                 }
