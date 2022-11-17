@@ -1,5 +1,5 @@
-import React, {useRef, useState, useCallback} from 'react'
-import {CardMedia, Card, CardContent, Typography, Slide, Modal, Dialog, Box} from '@mui/material'
+import React, {useRef, useState} from 'react'
+import {CardMedia, Card, CardContent, Typography, Slide, Modal, Box} from '@mui/material'
 import GridSkeleton from './GridSkeleton'
 import CarouselBackgroundImg from "./CarouselBackgroundImg";
 import {photoDataList} from "../assets/photos-all";
