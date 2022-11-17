@@ -6,8 +6,7 @@ import {
     Typography,
     Slide,
     Dialog,
-    Box,
-    useTheme
+    Box
 } from '@mui/material'
 import GridSkeleton from './GridSkeleton'
 import CarouselBackgroundImg from './CarouselBackgroundImg'
@@ -42,8 +41,6 @@ export default function ImageCard({
         borderRadius: '5px',
     }
 }: ImageCardProps) {
-
-    const theme = useTheme()
 
     const [isImageLoading, setIsImageLoading] = useState(true)
     const [isImageHovered, setIsImageHovered] = useState(false)
