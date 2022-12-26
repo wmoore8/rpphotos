@@ -52,7 +52,7 @@ function App() {
                                 />
                             </IconButton>
                         </a>
-                        <a href='mailto:ramseyprince@gmail.com'>
+                        <a href='mailto:rjpdesigns99@gmail.com'>
                             <IconButton>
                                 <MailOutlineIcon
                                     sx={{color: 'white'}}
