@@ -12,10 +12,10 @@ export default function Media() {
 
             <RPFont variant='h4' padding='20px 0'> Médias </RPFont>
 
-            <RPFont> The Baton Show Lounge - 2/23 </RPFont>
+            <RPFont> The Baton Show Lounge - 3/16 </RPFont>
 
             <a
-                href='https://www.eventbrite.com/e/burlesque-royale-love-edition-tickets-524736640417?aff=ebdsoporgprofile'
+                href='https://www.eventbrite.com/e/burlesque-royale-tickets-565472101277?aff=ebdsoporgprofile'
                 style={{
                     textDecoration: 'none',
                     color: 'white',
