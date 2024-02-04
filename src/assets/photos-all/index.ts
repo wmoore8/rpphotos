@@ -15,6 +15,14 @@ import S14 from './RSH_RJP-Gato_6B.jpg'
 import S15 from './RSH_RJP-Gato_7.jpg'
 import S16 from './_ND40111.jpg'
 import S17 from './RSH_RJP-Gato_2.jpg'
+import S18 from './RSH_MIA_6C-min.jpg'
+import S19 from './RSH_MIA_7D-min.jpg'
+import S20 from './RSH_CL_3-min.jpg'
+import S21 from './RSH_CL_6-min.jpg'
+import S22 from './RSH_CL_9-min.jpg'
+import S23 from './RSH_CL_12-min.jpg'
+import S24 from './RSH_CL_13C-min.jpg'
+import S25 from './RSH_CL_18-min.jpg'
 import F1 from './3-10-19_RSH_BJ_1C.jpg'
 import F2 from './3-10-19_RSH_BJ_1D.jpg'
 import F3 from './RSH_JF_11D.jpg'
@@ -33,6 +41,9 @@ import F15 from './RSH_RJP_BH_1C.jpg'
 import F16 from './RSH_RJP_BH_6C.jpg'
 import F17 from './RSH_RJP_BH_8.jpg'
 import F18 from './RSH_Vamps_21.jpg'
+import F19 from './RSH_BRC9\'23_24-min.jpg'
+import F20 from './RSH_BRC9\'23_27-min.jpg'
+import F21 from './RSH_BRC9\'23_28-min.jpg'
 import Su1 from './RSH_RJP_2L.jpg'
 import Su2 from './RSH_RJP_4-5-22_1.jpg'
 import Su3 from './RSH_RJP_C_5.jpg'
@@ -50,6 +61,7 @@ import Su14 from './RSH_BH_14.jpg'
 import Su15 from './RSH_BH_25C.jpg'
 import Su16 from './RSH_RJP_SS_2.jpg'
 import Su17 from './RSH_RJP_SS_1.jpg'
+import Su18 from './RSH_Oct\'23B_19-min.jpg'
 import W1 from './RSH_JF_1.jpg'
 import W2 from './RSH_JF_2.jpg'
 import W3 from './RSH_RJP_3.jpg'
@@ -65,6 +77,15 @@ import W12 from './RSH_JF_1CB.jpg'
 import W13 from './RSH_RJP_SS_7.jpg'
 import W14 from './RSH_LA_1.jpg'
 import W15 from './RSH_RJP_7.jpg'
+import W16 from './RSH_PM_2C-min.jpg'
+import W17 from './RSH_PM_3-min.jpg'
+import W18 from './RSH_PM_5-min.jpg'
+import W19 from './RSH_PM_6-min.jpg'
+import W20 from './RSH_MF_8-min.jpg'
+import W21 from './RSH_MF_10C-min.jpg'
+import W22 from './RSH_CM_1-min.jpg'
+import W23 from './RSH_CM_9-min.jpg'
+import W24 from './RSH_CM_10-min.jpg'
 
 export interface photoDataListProps {
     src: string,
@@ -157,6 +178,46 @@ export const photoDataList = [
         season: 'Spring'
     },
     {
+        src: S18,
+        modelName: 'Max',
+        season: 'Spring'
+    },
+    {
+        src: S19,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S20,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S21,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S22,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S23,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S24,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
+        src: S25,
+        modelName: 'Chase',
+        season: 'Spring'
+    },
+    {
         src: F1,
         modelName: 'Brendan',
         season: 'Fall'
@@ -241,6 +302,19 @@ export const photoDataList = [
     {
         src: F18,
         modelName: 'Tyler, Ramsey, Jack, and Paul',
+        season: 'Fall'
+    },
+    {
+        src: F19,
+        modelName: 'Gabriel',
+        season: 'Fall'
+    },{
+        src: F20,
+        modelName: 'Gabriel',
+        season: 'Fall'
+    },{
+        src: F21,
+        modelName: 'Gabriel',
         season: 'Fall'
     },
     {
@@ -329,6 +403,11 @@ export const photoDataList = [
         season: 'Summer'
     },
     {
+        src: Su18,
+        modelName: 'Graham',
+        season: 'Summer'
+    },
+    {
         src: W1,
         modelName: 'Jack',
         season: 'Winter'
@@ -403,4 +482,49 @@ export const photoDataList = [
         modelName: 'Jack',
         season: 'Winter'
     },
+    {
+        src: W16,
+        modelName: 'Patrick',
+        season: 'Winter'
+    },
+    {
+        src: W17,
+        modelName: 'Patrick',
+        season: 'Winter'
+    },
+    {
+        src: W18,
+        modelName: 'Patrick',
+        season: 'Winter'
+    },
+    {
+        src: W19,
+        modelName: 'Patrick',
+        season: 'Winter'
+    },
+    {
+        src: W20,
+        modelName: 'Matt',
+        season: 'Winter'
+    },
+    {
+        src: W21,
+        modelName: 'Matt',
+        season: 'Winter'
+    },
+    {
+        src: W22,
+        modelName: 'Cody',
+        season: 'Winter'
+    },
+    {
+        src: W23,
+        modelName: 'Cody',
+        season: 'Winter'
+    },
+    {
+        src: W24,
+        modelName: 'Cody',
+        season: 'Winter'
+    }
 ]
