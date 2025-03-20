@@ -106,5 +106,3 @@ function App() {
 }
 
 export default App;
-
-//TODO: Clicking photo brings full scale photo over-layed above, detail bar underneath with direct link to model(s) page
