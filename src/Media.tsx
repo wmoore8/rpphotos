@@ -12,7 +12,7 @@ export default function Media() {
 
             <RPFont variant='h4' padding='20px 0'> Médias </RPFont>
 
-            <RPFont> The Baton Show Lounge - Upcoming Shows </RPFont>
+            <RPFont> The Baton Show Lounge - Mythos Show Postponed to 4.17.25 </RPFont>
 
             <a
                 href='https://www.eventbrite.com/cc/burlesque-royale-chicago-2680999'
